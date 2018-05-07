@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的画板</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="DrawBoard"></canvas>
+    <div id="action">
+        <button id="brush" class="active">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-brush"></use>
+            </svg>
+        </button>
+        <button id="eraser">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-eraser"></use>
+            </svg>
+        </button>
+
+        <button id="deletes">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-delete"></use>
+            </svg>
+        </button>
+        <button id="save">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-download"></use>
+            </svg>
+        </button>
+
+    </div>
+    <ol id="color">
+        <li id="black" class="active">黑色</li>
+        <li id="blue">蓝色</li>
+        <li id="red">红色</li>
+        <li id="yellow">黄色</li>
+    </ol>
+    <ol class="line">
+        <li id="thin" class="active"></li>
+        <li id="thick"></li>
+    </ol>
+    <script src="main.js"></script>
+    <script src="//at.alicdn.com/t/font_656587_onjnbgosje8z1tt9.js"></script>
+</body>
+
+</html>

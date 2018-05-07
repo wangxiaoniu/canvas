@@ -1,0 +1,104 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ol,ul{
+    list-style: none;
+}
+button{
+    border:0;
+    background: transparent;
+  
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#DrawBoard{
+    background:lightblue;
+    display: block;
+}
+#action{
+    position: fixed;
+    left:1em;
+    top:1em;  
+}
+.icon {
+    width: 2em; height: 2em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+ #action > button.active >svg{
+    fill: red;
+    transition:all 0.3s;
+    /* 过渡改变 */
+    transform:scale(1.2);
+    /* 放大 */
+ }
+#action > button{
+    margin-right:0.2em;
+   
+}
+
+#color{
+    position: absolute;
+    top:3em;
+    left:1em;
+}
+#color > li{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    text-indent: -999px;
+    margin:1.2em 0;
+    transition: all 0.3s;
+}
+#color > li.active{
+    box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.82);
+    transform: scale(1.2);
+   
+}
+#color > li:nth-child(1){
+    background: black;
+}
+#color > li:nth-child(2){
+    background: blue;
+}
+#color > li:nth-child(3){
+    background: red;
+}
+#color > li:nth-child(4){
+    background: yellow;
+}
+.line{
+    
+    position: absolute;
+    right:1em;
+    top:0.3em;
+}
+.line > li{
+    width: 20px;
+    height: 0;
+    margin:1.2em 0;
+}
+
+#thin,#thick{
+    transition:all 0.3s;
+}
+#thin{
+    border-top:5px solid #000;
+}
+#thick{
+    
+    border-top:10px solid #000;
+}
+#thin.active,
+#thick.active{
+    transform: scale(1.2)
+    
+}
